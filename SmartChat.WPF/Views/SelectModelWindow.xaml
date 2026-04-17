@@ -1,0 +1,49 @@
+﻿<Window x:Class="SmartChat.WPF.Views.SelectModelWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="SmartChat.WPF"
+        Height="520"
+        Width="900"
+        ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Border Style="{StaticResource CardBorderStyle}"
+                Width="680"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center">
+            <StackPanel>
+                <TextBlock Text="SmartChat.WPF"
+                           Style="{StaticResource TitleTextStyle}"/>
+
+                <TextBlock Text="AI Chat Application"
+                           Style="{StaticResource SubtitleTextStyle}"/>
+
+                <TextBlock Text="Name: עלאא אלמדאדחה"
+                           Style="{StaticResource SubtitleTextStyle}"/>
+
+                <TextBlock Text="ID: 342542248"
+                           Style="{StaticResource SubtitleTextStyle}"
+                           Margin="0,0,0,30"/>
+
+                <TextBlock Text="Choose AI Model"
+                           FontSize="20"
+                           FontWeight="SemiBold"
+                           HorizontalAlignment="Center"
+                           Margin="0,0,0,20"/>
+
+                <UniformGrid Columns="2" Rows="1" Margin="0,10,0,0">
+                    <Button x:Name="btnOpenAI"
+                            Content="ChatGPT"
+                            Height="90"
+                            Style="{StaticResource PrimaryButtonStyle}"
+                            Click="btnOpenAI_Click"/>
+
+                    <Button x:Name="btnGemini"
+                            Content="Gemini"
+                            Height="90"
+                            Style="{StaticResource SecondaryButtonStyle}"
+                            Click="btnGemini_Click"/>
+                </UniformGrid>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>
